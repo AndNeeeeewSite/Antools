@@ -1,12 +1,30 @@
 .container {
   width: 1440px;
   margin: 0 auto;
-  padding: 0 111px;
+  padding: 0 15px;
 }
 
 
 
+.header-list-buttons{
+  display: flex;
+  gap: 20px;
 
+}
+
+
+.header-list-account{
+  gap:41px;
+}
+
+.header-list-logo{
+  gap: 21px;
+}
+.header-list-logo,
+.header-item-logo{
+  display: flex;
+  align-items: center;
+}
 .header-logo{
   color: rgba(255, 255, 255, 0.90);
   font-family: Poppins;
@@ -14,7 +32,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-left: 21px;
 }
 
 body{
@@ -22,6 +39,7 @@ body{
   font-style: normal;
   line-height: normal;
 }
+
 .header-links-account,
 .header-links-buttons{
 color: rgba(255, 255, 255, 0.55);
@@ -32,7 +50,7 @@ font-size: 16px;
 
 
 .header-link{
-  margin-left: 20px;
+
   color: rgba(255, 255, 255, 0.55);
 font-family: Poppins;
 font-size: 16px;
@@ -42,8 +60,9 @@ line-height: normal;
 }
 
 .header{
-  margin-top: 26px
+  padding-top: 26px;
 }
+
 
 
 .sign-up{
@@ -59,13 +78,13 @@ line-height: normal;
 
 .header-list{
   display: flex;
+  align-items: center;
 }
  
 .header-links{
   display: flex;
+  justify-content: space-between;
 }
-
-
 
 
 .galery-title-h1{
@@ -76,9 +95,6 @@ line-height: normal;
   font-weight: 500;
   line-height: 140%; /* 70px */
   margin-bottom: 30px
-}
-.header-list-logo{
-  margin-left: 9px
 }
 
 .galery-title-h3{
@@ -91,7 +107,6 @@ line-height: normal;
 }
 
 
-
 .galery-search{
     height: 633px;
   background-image: url("../img/Illustration.jpg");
@@ -101,8 +116,7 @@ line-height: normal;
 }
 
 .header-links-buttons{
-  margin-left: 257px;
-  margin-right: 193px;
+
   color: rgba(255, 255, 255, 0.55);
   font-family: Poppins;
   font-size: 16px;
@@ -181,7 +195,6 @@ text-align: center;
   font-style: normal;
   font-weight: 500;
   line-height: 130%; /* 62.4px */
-  margin-top: 287px;
 }
 
 .galery-tools-title-h3{
@@ -194,7 +207,6 @@ text-align: center;
   line-height: 30px; /* 166.667% */
   margin-top: 25px;
 }
-
 
 
 
@@ -215,6 +227,10 @@ line-height: normal;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 187.5% */
+}
+
+.galery-tools{
+  margin-top: 200px;
 }
 
 .galery-tools-link{
@@ -321,6 +337,7 @@ gap: 3px;
   gap:12px;
 }
 
+
 .galery-tools-link{
   width: 106px;
   height: 42px;
@@ -336,21 +353,10 @@ gap: 3px;
 .galery-divs-tools{
   display:flex ;
   flex-wrap: wrap;
-  gap:25px;
-  width:1251px;
+  row-gap: 120px;
+  column-gap: 25px;
   margin-top: 90px;
-}
-
-.galery-div-tools:nth-child(-n+3){
-  margin-bottom: 75px;
-}
-
-.galery-div-tools:nth-child(n+3){
-  margin-bottom: 75px;
-}
-
-.galery-tools-list-image{
-  margin-bottom:33px;
+  justify-content: center;
 }
 
 .galery-button-tools{
@@ -366,10 +372,8 @@ gap: 3px;
   width: 184px;
   height: 64px;
   flex-shrink: 0;
-  margin-left:41%;
-  margin-right: 50%;
+  
 }
-
 
 
 
@@ -400,6 +404,10 @@ gap: 3px;
   content: url('../img/likeliked.svg');
 }
 
+.galery-section-brand{
+  margin-top: 200px;
+}
+
 .galery-brand{
   display: flex;
   width: 1224px;
@@ -408,7 +416,6 @@ gap: 3px;
   border-radius: 25px;
   border: 2px solid rgba(255, 255, 255, 0.05);
   background: rgba(44, 53, 61, 0.20);
-  backdrop-filter: blur(25px);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -417,7 +424,6 @@ gap: 3px;
   outline: 2px solid rgba(48, 58, 65, 0.6);
   margin-left: auto;
   margin-right: auto;
-  margin-top:200px;
 }
 .galery-title-h3-brand{
   color: rgba(255, 255, 255, 0.80);
@@ -470,10 +476,8 @@ gap: 3px;
   line-height: normal;
   margin-top: 60px;
 }
-
 /*--------------------------*/
 .galery-div-newtools{
-  width: 288px;
   height: 284px;
   flex-shrink: 0;
   border-radius: 15px;
@@ -512,7 +516,6 @@ gap: 3px;
 
 .galery-list-tools-newtools{
 margin-top:220px;
-margin-left: 197px;
 }
 
 .galery-div-newtools:hover {
@@ -561,12 +564,13 @@ margin-left: 197px;
   flex-wrap: wrap;
 }
 
-.galery-list-tools-newtools{
-  gap:24px;
+.galery-newtools{
+  justify-content: space-between;
 }
-.phpsorm,
-.zeplin{
-margin-bottom: 26px;
+
+.galery-list-tools-newtools{
+  column-gap: 24px;
+  row-gap: 50px;
 }
 
 .galery-image-people{
@@ -669,8 +673,10 @@ margin-bottom: 26px;
   margin-top: 25px;
 }
 
+
 .galery-section-join{
   margin-top: 460px;
+  margin-bottom:240px;
 }
 
 .galery-form-join{
@@ -717,10 +723,6 @@ margin-bottom: 26px;
   margin-top:100px;
 }
 
-.galery-div-join{
-  margin-bottom: 240px;
-}
-
 .logo-background{
   width: 38px;
   height: 38px;
@@ -740,7 +742,11 @@ margin-bottom: 26px;
 .logo-footer{
   display: flex;
   gap: 12px;
+}
+
+.footer-collumn-logo{
   margin-top: 70px;
+  margin-bottom: 98px;
 }
 
 .line{
@@ -762,7 +768,6 @@ font-family: Poppins;
 font-size: 14px;
 font-weight: 400;
 line-height: 25px; /* 178.571% */
-margin-bottom: 98px;
 }
 .galery-title-h2-footer
 {
@@ -834,3 +839,11 @@ margin-bottom: 98px;
   margin-left: 118px;
   margin-top: 70px;
 }
+
+
+.galery-button-tools{
+  margin-left: 43%;
+  margin-right: 50%;
+  margin-top: 100px;
+}
+
