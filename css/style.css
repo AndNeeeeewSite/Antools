@@ -847,3 +847,10 @@ line-height: 25px; /* 178.571% */
   margin-top: 100px;
 }
 
+
+
+.galery-tools{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
